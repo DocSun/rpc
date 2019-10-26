@@ -9,9 +9,9 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface RPCProvider {
 
+    Class<?> seviceInterface();
+
     String serviceVersion() default "";
-
-
 
 
 }
