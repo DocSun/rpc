@@ -13,5 +13,6 @@ public @interface RPCProvider {
 
     String serviceVersion() default "";
 
+    String serviceGroup() default "";
 
 }
