@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 /**
  * @author Johnny
  * @date 2019/10/27 21:45
+ *
+ * 负载均衡策略静态可配置 ，后面看能否搞成动态可配的
  */
 public abstract class AbstractRouteStrategy implements RouteStrategy{
 
