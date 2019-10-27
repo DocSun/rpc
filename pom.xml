@@ -11,6 +11,7 @@
 
     <artifactId>rpc</artifactId>
     <version>1.0.0</version>
+
     <packaging>pom</packaging>
 
 
@@ -18,13 +19,13 @@
         <module>rpc-client</module>
         <module>rpc-server</module>
         <module>rpc-config-server</module>
-        <module>rpc-util</module>
-        <module>rpc-demo</module>
+        <module>rpc-common</module>
     </modules>
 
     <properties>
-        <rpc-util-version>1.0.0</rpc-util-version>
-        <rpc-client-verion>1.0.0</rpc-client-verion>
+        <rpc-common-version>1.0.0</rpc-common-version>
+        <rpc-config-verion>1.0.0</rpc-config-verion>
+        <spring.version>4.2.5.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
@@ -37,8 +38,14 @@
 
             <dependency>
                 <groupId>com.johnny.test</groupId>
-                <artifactId>rpc-util</artifactId>
-                <version>${rpc-util-version}</version>
+                <artifactId>rpc-common</artifactId>
+                <version>${rpc-common-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.johnny.test</groupId>
+                <artifactId>rpc-config-server</artifactId>
+                <version>${rpc-config-verion}</version>
             </dependency>
 
             <dependency>
@@ -46,6 +53,27 @@
                 <artifactId>rpc-client</artifactId>
                 <version>${rpc-client-verion}</version>
             </dependency>
+
+
+            <!-- spring 相关依赖   start-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <!-- spring 相关依赖   end-->
         </dependencies>
     </dependencyManagement>
 

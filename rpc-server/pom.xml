@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.johnny.test</groupId>
-            <artifactId>rpc-util</artifactId>
+            <artifactId>rpc-common</artifactId>
         </dependency>
 
         <dependency>
