@@ -24,7 +24,7 @@
 
     <properties>
         <rpc-common-version>1.0.0</rpc-common-version>
-        <rpc-client-verion>1.0.0</rpc-client-verion>
+        <rpc-config-verion>1.0.0</rpc-config-verion>
         <spring.version>4.2.5.RELEASE</spring.version>
     </properties>
 
@@ -40,6 +40,12 @@
                 <groupId>com.johnny.test</groupId>
                 <artifactId>rpc-common</artifactId>
                 <version>${rpc-common-version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.johnny.test</groupId>
+                <artifactId>rpc-config-server</artifactId>
+                <version>${rpc-config-verion}</version>
             </dependency>
 
             <dependency>

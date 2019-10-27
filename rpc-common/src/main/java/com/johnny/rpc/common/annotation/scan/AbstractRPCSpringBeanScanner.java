@@ -1,15 +1,22 @@
 package com.johnny.rpc.common.annotation.scan;
 
-import com.johnny.rpc.common.annotation.enums.AnnotationTypeEnum;
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.config.BeanPostProcessor;
+        import com.johnny.rpc.common.annotation.enums.AnnotationTypeEnum;
+        import org.springframework.beans.BeansException;
+        import org.springframework.beans.factory.InitializingBean;
+        import org.springframework.beans.factory.config.BeanPostProcessor;
+
+        import java.lang.annotation.Annotation;
 
 public abstract class AbstractRPCSpringBeanScanner implements BeanPostProcessor {
 
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        Annotation [] annotations = bean.getClass().getAnnotations();
+        for (Annotation annotation : annotations) {
+
+        }
+
         return null;
     }
 
@@ -26,5 +33,5 @@ public abstract class AbstractRPCSpringBeanScanner implements BeanPostProcessor 
     public abstract void doScan();
 
 
-    public abstract boolean supportInitialize();
+    public abstract AnnotationTypeEnum getAnnotationType();
 }
