@@ -21,6 +21,7 @@ public class RoundRouteStrategy extends AbstractRouteStrategy{
     }
 
     private int getServerIndex() {
+        serverIndex.addAndGet(1);
         return serverIndex.get();
     }
 
