@@ -1,5 +1,6 @@
 package com.johnny.rpc.common.annotation.scan;
 
+import com.johnny.rpc.common.annotation.enums.AnnotationTypeEnum;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,5 +14,10 @@ public class RPCProvierSpringBeanScanner extends AbstractRPCSpringBeanScanner {
     @Override
     public void doScan() {
 
+    }
+
+    @Override
+    public AnnotationTypeEnum getAnnotationType() {
+        return null;
     }
 }
