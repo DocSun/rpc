@@ -24,7 +24,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <rpc-common-version>1.0.0</rpc-common-version>
         <rpc-config-verion>1.0.0</rpc-config-verion>
-        <spring.version>4.2.5.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
     </properties>
 
     <dependencyManagement>
